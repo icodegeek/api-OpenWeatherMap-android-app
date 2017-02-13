@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jjmacbook.weather_api.SecondActivity">
+
+    <TextView
+        android:text="Ciudad: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/textViewCity" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewCity"
+        android:layout_toRightOf="@+id/textViewCity"
+        android:layout_toEndOf="@+id/textViewCity"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:id="@+id/textViewCity2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textViewCity" />
+
+    <TextView
+        android:text="Longitud: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLong"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <TextView
+        android:text="Latitud: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLong"
+        android:layout_toRightOf="@+id/textViewLong"
+        android:layout_toEndOf="@+id/textViewLong"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:id="@+id/textViewLat" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/view" />
+
+    <TextView
+        android:text="Temperatura: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:id="@+id/textView7" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTemp"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_toLeftOf="@+id/textViewMax"
+        android:layout_toRightOf="@+id/textViewMin"
+        android:layout_toEndOf="@+id/textViewMin" />
+
+    <TextView
+        android:text="min: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:textColor="#000"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:text="max: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewMin"
+        android:layout_alignLeft="@+id/textViewCity2"
+        android:layout_alignStart="@+id/textViewCity2"
+        android:textColor="#000"
+        android:id="@+id/textView13" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13"
+        android:id="@+id/textViewMax"
+        android:layout_toRightOf="@+id/textView13" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:id="@+id/view2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Velocidad viento: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:textColor="#000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView15" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15"
+        android:id="@+id/textViewVel"
+        android:layout_toRightOf="@+id/textView15" />
+
+    <TextView
+        android:text="Humedad: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView17" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17"
+        android:id="@+id/textViewHum" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMin"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toLeftOf="@+id/textViewCity2"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
+
+
+</RelativeLayout>
