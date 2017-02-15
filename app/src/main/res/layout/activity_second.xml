@@ -18,7 +18,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="28dp"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#000"
         android:id="@+id/textViewCity" />
@@ -33,7 +33,7 @@
         android:layout_marginLeft="22dp"
         android:layout_marginStart="22dp"
         android:id="@+id/textViewCity2"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:layout_alignTop="@+id/textViewCity" />
 
@@ -56,7 +56,8 @@
         android:id="@+id/textViewLong"
         android:layout_alignTop="@+id/textView3"
         android:layout_toEndOf="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3" />
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_marginLeft="5sp"/>
 
     <TextView
         android:text="Latitud: "
@@ -78,11 +79,12 @@
         android:layout_alignTop="@+id/textView4"
         android:layout_toRightOf="@+id/textView4"
         android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="5sp"
         android:id="@+id/textViewLat" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="3dp"
         android:background="#000"
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
@@ -91,13 +93,14 @@
         android:id="@+id/view" />
 
     <TextView
-        android:text="Temperatura: "
+        android:text="Temperatura actual: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
+        android:textStyle="bold"
         android:textColor="#000"
         android:id="@+id/textView7" />
 
@@ -105,60 +108,48 @@
         android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewTemp"
         android:layout_alignTop="@+id/textView7"
-        android:layout_toLeftOf="@+id/textViewMax"
-        android:layout_toRightOf="@+id/textViewMin"
-        android:layout_toEndOf="@+id/textViewMin" />
+        android:id="@+id/textViewTemp"
+        android:layout_toLeftOf="@+id/textViewDesc"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_marginLeft="5sp"
+        android:layout_toEndOf="@+id/textView7" />
 
     <TextView
-        android:text="min: "
+        android:text="Descripción: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="12dp"
+        android:textStyle="bold"
         android:textColor="#000"
         android:id="@+id/textView9" />
-
-    <TextView
-        android:text="max: "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textViewMin"
-        android:layout_alignLeft="@+id/textViewCity2"
-        android:layout_alignStart="@+id/textViewCity2"
-        android:textColor="#000"
-        android:id="@+id/textView13" />
 
     <TextView
         android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView13"
-        android:layout_toEndOf="@+id/textView13"
-        android:id="@+id/textViewMax"
-        android:layout_toRightOf="@+id/textView13" />
+        android:id="@+id/textViewDesc"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toLeftOf="@+id/textViewCity2"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9"
+        android:layout_marginLeft="5sp"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#000"
-        android:id="@+id/view2"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="Velocidad viento: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/view2"
+        android:layout_below="@+id/textViewDesc"
         android:textColor="#000"
+        android:textStyle="bold"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:id="@+id/textView15" />
 
     <TextView
@@ -168,7 +159,8 @@
         android:layout_alignTop="@+id/textView15"
         android:layout_toEndOf="@+id/textView15"
         android:id="@+id/textViewVel"
-        android:layout_toRightOf="@+id/textView15" />
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_marginLeft="5sp"/>
 
     <TextView
         android:text="Humedad: "
@@ -178,6 +170,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="#000"
+        android:textStyle="bold"
         android:layout_marginTop="12dp"
         android:id="@+id/textView17" />
 
@@ -188,18 +181,8 @@
         android:layout_alignTop="@+id/textView17"
         android:layout_toRightOf="@+id/textView17"
         android:layout_toEndOf="@+id/textView17"
+        android:layout_marginLeft="5sp"
         android:id="@+id/textViewHum" />
-
-    <TextView
-        android:text=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewMin"
-        android:layout_alignBaseline="@+id/textView9"
-        android:layout_alignBottom="@+id/textView9"
-        android:layout_toLeftOf="@+id/textViewCity2"
-        android:layout_toRightOf="@+id/textView9"
-        android:layout_toEndOf="@+id/textView9" />
 
 
 </RelativeLayout>
