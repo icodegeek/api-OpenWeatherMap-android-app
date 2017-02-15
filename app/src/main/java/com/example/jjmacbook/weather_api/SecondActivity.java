@@ -58,7 +58,7 @@ public class SecondActivity extends AppCompatActivity {
 
             String ciudad = b.getString("ciudad");
 
-            String url = "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "&appid=INTO-YOUR-API-ID-HERE";
+            String url = "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "&appid=YOUR-API-ID";
 
             JsonObjectRequest myrequest = new JsonObjectRequest(Request.Method.GET, url, null,
 
